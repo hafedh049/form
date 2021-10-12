@@ -1,0 +1,95 @@
+<!DOCTYPE html lang="en-US">
+<html>
+
+<head>
+    <title>
+        Index ♥
+    </title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            background-color: transparent;
+            position: absolute;
+            top: 155px;
+            right: 450px;
+            left: 450px;
+            bottom: 155px;
+            border-radius: 1000px;
+            border: 5px solid #00ff40;
+            border-style: groove;
+            border-left-color: black;
+            animation-name: myframe;
+            animation-duration: 0.4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        #d2 {
+            width: 380px;
+            height: 380px;
+            background-color: transparent;
+            position: absolute;
+            top: 165px;
+            right: 460px;
+            left: 460px;
+            bottom: 175px;
+            border-radius: 1000px;
+            border: 5px solid #ff009d;
+            border-style: groove;
+            border-left-color: black;
+            animation-name: myframe;
+            animation-duration: 0.4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.25s;
+        }
+        
+        #d3 {
+            width: 360px;
+            height: 360px;
+            background-color: transparent;
+            position: absolute;
+            top: 175px;
+            right: 470px;
+            left: 470px;
+            bottom: 175px;
+            border-radius: 1000px;
+            border: 5px solid #00eeff;
+            border-style: groove;
+            border-left-color: black;
+            animation-name: myframe;
+            animation-duration: 0.4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.125s;
+        }
+        
+        @keyframes myframe {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        body {
+            background: black;
+        }
+    </style>
+    <!--<meta http-equiv="refresh" content="3" ;URL="http://www.google.com">-->
+    <script type="text/javascript">
+        setTimeout(() => {
+            window.location.href = "file:///D:/main.html";
+        }, 3000);
+    </script>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+
+</html>

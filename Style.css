@@ -1,0 +1,182 @@
+/* this is for main : */
+
+body {
+    text-align: center;
+    background: url("1.jpg") no-repeat center center fixed;
+}
+
+form {
+    font-family: "Sofia", sans-serif;
+    font-size: 20;
+    font-style: bold;
+    text-align: left;
+    background-color: rgba(174, 255, 163, 0.2);
+    border-radius: 25px;
+    width: 650px;
+    height: 1150px;
+    display: inline-block;
+    animation-name: f;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+input[type="text"] {
+    display: inline-block;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to left, #00b55b, #ff8a00);
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    height: 30px;
+    border: 2px solid #ff00c8;
+}
+
+textarea {
+    display: inline-block;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to left, #ff00d4, #00c3ff);
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    height: 120px;
+    border: 2px solid #4400ff;
+}
+
+label:hover {
+    color: rgb(255, 0, 157);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    transform: scale(1.1);
+    filter: drop-shadow(2px 3px 3px #333);
+}
+
+label {
+    text-align: left;
+    color: whitesmoke;
+}
+
+#gender,
+#level,
+#phone,
+#email {
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to left, #007db5, #ff8a00);
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 25px;
+    border: 2px solid #ff00c8;
+}
+
+#phone:hover {
+    color: chartreuse;
+}
+
+audio {
+    background: linear-gradient(to left, #007db5, #ff8a00);
+    border-radius: 75px;
+    position: absolute;
+    top: 3.7%;
+    right: 340px;
+    width: 100px;
+}
+
+img {
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 0%;
+    right: 340px;
+    width: 98px;
+    height: 80px;
+}
+
+audio:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(2px 3px 3px #333);
+}
+
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-rewind-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    background-color: chartreuse;
+}
+
+input[type="text"]:hover,
+#phone:hover,
+#email:hover,
+#level:hover,
+#gender:hover,
+select :hover,
+textarea:hover {
+    border: 2px solid #eeff00;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+@keyframes f {
+    0% {
+        border: 5px groove #00ff00;
+    }
+    25% {
+        border: 5px groove #00ccff;
+    }
+    50% {
+        border: 5px groove #ff00ea;
+    }
+    75% {
+        border: 5px groove #d0ff00;
+    }
+    100% {
+        border: 5px groove #00ff00;
+    }
+}
+
+#req {
+    text-align: center;
+}
+
+#title,
+#title1 {
+    text-align: center;
+    margin-top: 4%;
+    font-family: "Sofia", sans-serif;
+    font-size: 40px;
+}
+
+#confirm {
+    text-align: center;
+}
+
+#confirm1 {
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 15px;
+    color: ivory;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: green;
+}
+
+#confirm1:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(2px 3px 3px #333);
+}

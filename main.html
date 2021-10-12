@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <title>Main</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|fire-animation">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Formulaire.js"></script>
+</head>
+</head>
+
+<body>
+    <form id="f" name="form" autocomplete="on" enctype="application/x-www-form-urlencoded" method="POST" action="main.php">
+        <div id="title">
+            <font id="title1" class="font-effect-fire-animation" color="orange">Club Robotique</font>
+        </div>
+        <img id="fire" src="1.gif" alt="fire">
+        <br><audio autoplay controls loop id="audio">
+            <source src="y.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <div title="First Name">&nbsp;<label for="First Name">First Name <font color="red">*</font></label><br>&nbsp;<input type="text" id="First Name" required></div><br>
+        <div title="Last Name">&nbsp;<label for="Last Name">Last Name <font color="red">*</font></label><br>&nbsp;<input type="text" id="Last Name" required></div><br>
+        <div title="Gender">&nbsp;<label for="gender">Gender <font color="red">*</font><br></label>&nbsp;<select name="Gender" id="gender" required>
+            <option value=""></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select></div><br>
+
+        <div title="Level">&nbsp;<label for="level">Level <font color="red">*</font><br></label>&nbsp;<select name="Level" id="level" required>
+            <option value=""></option>
+            <option value="L1 TIC">L1 TIC</option>
+            <option value="L1 INFO">L1 INFO</option>
+            <option value="L1 EEA">L1 EEA</option>
+            <option value="L1 MATH">L1 MATH</option>
+            <option value="L2 GL">L2 GL</option>
+            <option value="ING EEA">ING EEA</option>
+            <option value="L2 TIC">L2 TIC</option>
+            <option value="L2 MATH">L2 MATH</option>
+            <option value="L2 SE">L2 SE</option>
+            <option value="CPI1">CPI1</option>
+            <option value="CPI2">CPI2</option>
+            <option value="ING1">ING1</option>
+            <option value="ING2">ING2</option>
+            <option value="ING3">ING3</option>
+            <option value="L3 GL">L3 GL</option>
+            <option value="L3 SE">L3 SE</option>
+            <option value="L3 MATH">L3 MATH</option>
+            <option value="L3 TIC">L3 TIC</option>
+        </select></div><br>
+
+        <div title="E-Mail"><label for="email">&nbsp;E-mail <font color="red">*</font></label><br>&nbsp;
+            <input type="email" id="email" name="email" placeholder="aaa@bbb.ccc" required>
+        </div><br>
+
+        <div title="Phone Number"><label for="phone">&nbsp;Phone Number <font color="red">*</font></label><br>&nbsp;
+            <input type="tel" id="phone" name="phone" placeholder="00000000" pattern="[0-9]{8}" required></div><br>
+
+
+        <div title="Facebook Link"><label for="Facebook Link">&nbsp;Facebook Link <font color="red">*</font></label><br>&nbsp;
+            <input type="text" id="Facebook Link" name="Facebook Link" required>
+        </div><br>
+
+        <div title="Feedback"><label for="feedback">&nbsp;What Comes To Your Mind When Hear Robotics</label><br>&nbsp;
+            <textarea id="feedback" name="feedback" required rows="5" cols="7"></textarea>
+        </div><br>
+        <div id="req">
+            <font color="red">*</font> : (Required)</div><br>
+        <div id="confirm"><button id="confirm1" type="submit" onclick="test()">Confirm</button></div>
+    </form>
+</body>
+
+</html>
